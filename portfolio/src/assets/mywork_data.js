@@ -1,7 +1,7 @@
 import pimg1 from './pimg1.jpeg';
 import pimg2 from './pimg2.jpeg';
 import pimg3 from './pimg3.jpeg';
-import pimg4 from './pimg4.jpeg';
+import pimg4 from './pimg4.webp';
 const mywork_data = [
     {
         w_no: 1,

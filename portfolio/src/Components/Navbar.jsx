@@ -1,17 +1,29 @@
-import React, { useState } from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import './Navbar.css'
-// import logo from '../../assets/logo.svg'
+import React, { useState, useRef } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import './Navbar.css';
+import menuopen from '../assets/menuopen.svg'; 
+import menuclose from '../assets/menuclose.svg';
 
 const Navbar = () => {
-  const [menu, setMenu] = useState("home")
+  const [menu, setMenu] = useState("home");
+  const menuRef = useRef();
+
+  const openMenu = () => {
+    menuRef.current.style.right = "0";
+  };
+
+  const closeMenu = () => {
+    menuRef.current.style.right = "-350px";
+  };
 
   return (
     <div className="navbar">
       <div className='nav'>
         <h3>SWETHA</h3>
-      </div>
-      <ul className='nav-menu'>
+        </div>
+        <img src={menuopen} onClick={openMenu} alt="Open Menu" className="nav-mob-open" />
+      <ul ref={menuRef} className='nav-menu'>
+        <img src={menuclose} onClick={closeMenu} alt="Close Menu" className='nav-mob-close' />
         <li>
           <AnchorLink className='anchor-link' href="#home">
             <p onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</p>
@@ -32,15 +44,12 @@ const Navbar = () => {
             <p onClick={() => setMenu("work")} className={menu === "work" ? "active" : ""}>Work</p>
           </AnchorLink>
         </li>
-        <li>
-          <AnchorLink className='anchor-link' href="#contact">
-            <p onClick={() => setMenu("contact")} className={menu === "contact" ? "active" : ""}>Contact</p>
-          </AnchorLink>
-        </li>
       </ul>
-        <div className="nav-connect"><AnchorLink className='anchor-link' href="#contact">Connect with me</AnchorLink></div>
+      <div className="nav-connect">
+        <AnchorLink className='anchor-link' href="#contact">Connect with me</AnchorLink>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

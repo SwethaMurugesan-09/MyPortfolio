@@ -1,36 +1,120 @@
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     margin: 20px 170px;
-}
-.nav-menu
-{
-    display:flex;
-    align-items:center;
-    list-style:none;
-    gap:60px;
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
     font-size: 20px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.nav-connect{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .nav-connect {
     padding: 20px 40px;
     border-radius: 50px;
-    background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%);
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
     font-size: 22px;
     cursor: pointer;
     text-decoration: none;
-}
-.nav-connect:hover{
+  }
+  
+  .nav-connect:hover {
     transform: scale(1.05);
-}
-.anchor-link{
+  }
+  
+  .anchor-link {
     text-decoration: none;
-    color:white;
-}
-.nav h3{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .nav h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #B923E1;
     font-size: 40px;
     font-weight: 600;
-}
+  }
+  
+
+  .nav-menu li {
+    position: relative;
+    font-size: 20px;
+    padding-left: 0;
+    cursor: pointer;
+  }
+  
+  .nav-menu li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #B923E1; 
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-menu li:hover::after {
+    width: 100%;
+  }
+  
+
+  .nav-mob-close {
+    display: none;
+  }
+  .nav-mob-open{
+    display: none;
+    position: relative;
+  }
+  @media(max-width: 768px) {
+    .navbar {
+      margin: 20px 50px;
+    }
+  
+    .nav-connect {
+      display: none;
+    }
+  
+    .nav-mob-open {
+      display: block;
+      position: fixed;
+      right: 30px;
+      cursor: pointer;
+    }
+  
+    .nav-mob-close {
+      display: block;
+      position: relative;
+      top: 30px;
+      left: 290px;
+      width: 30px;
+      cursor: pointer;
+    }
+  
+    .nav-menu {
+      position: fixed;
+      flex-direction: column;
+      align-items: start;
+      top: 0;
+      gap: 30px;
+      background-color: #1F0016;
+      width: 350px;
+      height: 100%;
+      z-index: 2;
+      transition: right 0.5s;
+      right: -350px;
+    }
+  
+    .nav-menu li {
+      font-size: 30px;
+      padding-left: 100px;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  

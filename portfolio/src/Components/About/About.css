@@ -15,8 +15,8 @@
 }
 .about-title h1{
     padding:0px 30px;
-    font-size: 80px;
-    font-weight: 600;
+    font-size: 60px;
+    font-weight: 500;
 }
 .about-sections{
     display: flex;
@@ -64,4 +64,36 @@ gap:20px;
     align-items: center;
     gap:10px;
     transition: 0.5s;
+}
+@media(max-width:768px){
+    .about{
+        gap: 80px;
+        margin: 50px;
+        align-items: start;
+    }
+    .about-title h1{
+        font-size: 50px;
+        padding: 0;
+    }
+    .about-title img{
+        width: 130px;
+        right: -20px;
+    }
+    .about-sections{
+        flex-direction: column;
+    }
+    .about-left{
+        display: none;
+
+    }
+    .about-para{
+        font-size: 18px;        
+    }
+    .about-skill{
+        gap: 20px;
+        align-items: center;
+    }
+    .about-skill p{
+        font-size:20px ;
+    }
 }
