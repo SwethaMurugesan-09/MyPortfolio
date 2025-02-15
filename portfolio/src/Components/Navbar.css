@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    margin: 25px 170px;
   }
   .nav-menu {
     display: flex;
@@ -14,9 +14,9 @@
   }
   
   .nav-connect {
-    padding: 20px 40px;
+    padding: 15px 25px;
     border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background:#B923E1;
     font-size: 22px;
     cursor: pointer;
     text-decoration: none;
