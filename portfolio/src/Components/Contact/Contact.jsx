@@ -28,22 +28,6 @@ const Contact = () => {
         <div className="contact-title">
             <h1>Get in touch</h1>
         </div>
-        <div className="contact-section">
-            <div className="contact-left">
-                <h1>Contact me</h1>
-            </div>
-        <div className="contact-details">
-            <div className="contact-detail">
-                <p>Email: swethamk45@gmail.com</p>
-            </div>
-            <div className="contact-detail">
-                <p>Phone: +91 6374386020</p>
-            </div>
-            <div className="contact-detail">
-                <p>Address: Tamilnadu, India</p>
-            </div>
-            </div>
-        </div>
         <form onSubmit={onSubmit}className="contact-right">
             <label htmlFor="">Your Name</label>
             <input type="text" placeholder="Enter your name" name="name" />

@@ -1,7 +1,17 @@
 import React from 'react'
 import './About.css'
-import profile from '../../assets/profile.jpg'
 
+const skills = [
+    { name: "Java, C", percentage: 75 },
+    { name: "JavaScript", percentage: 55 },
+    { name: "ReactJS", percentage: 55 },
+    { name: "PowerBI, Figma", percentage: 60 },
+    {name: "NodeJs, ExpressJs",percentage:60},
+    {name: "MongoDB",percentage:60},
+    {name: "MySQL",percentage:60},,
+    { name: "GitHub, Postman", percentage: 80 },
+    {name: "Cloudinary, Clerk",percentage:50}
+];
 const About = () => {
   return (
     <div id="about" className='about'>
@@ -11,22 +21,15 @@ const About = () => {
         <div>
            <div className="about-sections">
                 <div className="about-skills">
-                    <div className="about-skill">
-                        <p>Programming Language: Java</p>
-                    </div>
-                    <div className="about-skill">
-                        <p>JavaScript</p>
-                    </div>
-                    <div className="about-skill">
-                        <p>React JS</p>
+                {skills.map((skill, index) => (
+                        <div className="about-skill" key={index}>
+                        <p>{skill.name}</p>
+                        <div className="skill-bar">
+                            <div className="skill-fill" style={{ width: `${skill.percentage}%` }}></div>
+                        </div>
                     </div>
                     
-                    <div className="about-skill">
-                        <p>PowerBI, Figma</p>
-                    </div>
-                    <div className="about-skill">
-                        <p>Github</p>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>

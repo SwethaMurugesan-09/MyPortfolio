@@ -1,56 +1,58 @@
-.about{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:80px;
-    margin: 80px 170px;
-}
-.about-left img{
-    width: 40vh;
-    height: 40vh;
-}
 .about-title{
-    position: relative;
+    margin-top:75px;
+    margin-bottom: 60px;
+    text-align: center;
 }
 .about-title h1{
-    padding:0px 30px;
     font-size: 60px;
     font-weight: 500;
+
 }
 .about-sections{
     display: flex;
     gap:80px;
-    margin-top: -30px;
+    justify-content: center;
+    width: 100%;
+
 }
-.about-right{
+
+.skill-fill{
+    height: 100%;
+    background-color: #B923E1;
+    transition: width 1s ease-in-out;
+}
+    .about-skills{
     display: flex;
     flex-direction: column;
-    gap:80px;
-}
-.about-para{
+    gap:20px;
+    width: 100%;
+    max-width: 800px;
+    }
+.about-skill {
     display: flex;
-    flex-direction: column;
-    gap:80px;
-    font-size: 20px;
-    font-weight:500;
-}
-.about-skills{
-display: flex;
-flex-direction: column;
-gap:20px;
-}
-.about-skill{
-    display: flex;
-    gap:50px;
+    gap: 30px;
     align-items: center;
-    transition: 0.3s;
+    width: 100%;
+    max-width:100%;
 }
-.about-skill p{
-    min-width:150px;
-    font-size:20px;
-    font-weight:500 ;
+
+.about-skill p {
+    font-size: 20px;
+    font-weight: 500;
+    min-width: 150px; 
+    text-align: left;
+    margin-left: 170px;
 }
+.skill-bar{
+    flex-grow: 1;
+    height: 10px; 
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    max-width: 300px;
+}
+
 @media(max-width:768px){
     .about{
         gap: 80px;

@@ -5,29 +5,37 @@ import pimg4 from './pimg4.webp';
 const mywork_data = [
     {
         w_no: 1,
-        w_name: "PlacementPro project using python Flask.",
+        w_name: "Hirely.",
         w_img: pimg1,
-        w_link: "https://github.com/SwethaMurugesan-09/Manga-Reader-using-Python-Djang"
+        desc:"Hirely is a jobPortal website which allow the users to apply for a job and the find by searching the particular domains and places.",
+        w_link: "https://github.com/SwethaMurugesan-09/JobPortal",
+        w_link1:"https://job-portal-gamma-jet.vercel.app/"
     },
     {
         w_no: 2,
-        w_name: "Manga Reader project using python Django.",
+        w_name: "Freshmart",
         w_img: pimg2,
-        w_link: "https://github.com/SwethaMurugesan-09/Manga-Reader-using-Python-Django"
+        desc:"Freshmart is a Grocery Management website which allow the users to buy their product by searching the categories and they can proceed by payment.",
+        w_link: "https://github.com/SwethaMurugesan-09/Grocery_Management",
+        w_link1:"https://freshmart-ebon.vercel.app/"
 
     },
 
     {
         w_no: 3,
-        w_name: "Bus ticket Reservation using python Flask.",
-        w_img: pimg3,
-        w_link: "https://link_to_project2.com"
+        w_name: "WanderWise",
+        w_img: pimg3,       
+         desc:"This travel planner website allows users to view the different destinations and they can book hotels and restaurants.",
+        w_link: "https://github.com/SwethaMurugesan-09/Travelplanner",
+        w_link1:"https://travelplanner-theta.vercel.app/"
     },
     {
         w_no: 4,
-        w_name: "Bus fees management system using Java.",
+        w_name: "BeatFlow",
         w_img: pimg4,
-        w_link: "https://link_to_project2.com"
+        desc:"BeatFlow is a music webiste which allow the users to listen to their favourite songs.",
+        w_link: "https://github.com/SwethaMurugesan-09/spotify",
+        w_link1:"https://spotify-zeta-mocha.vercel.app/"
     }
 ];
 
